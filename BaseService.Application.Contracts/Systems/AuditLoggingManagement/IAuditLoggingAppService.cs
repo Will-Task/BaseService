@@ -1,0 +1,17 @@
+﻿using System;
+using System.Threading.Tasks;
+using BaseService.Systems.AuditLoggingManagement.Dto;
+using Volo.Abp.Application.Dtos;
+using Volo.Abp.Application.Services;
+
+namespace BaseService.Systems.AuditLoggingManagement
+{
+    public interface IAuditLoggingAppService : IApplicationService
+    {
+        Task<AuditLogDto> Get(Guid id);
+
+        Task<PagedResultDto<AuditLogDto>> GetAll(GetAuditLogsInput input);
+
+        Task<GetAverageExecutionDurationPerDayOutput> GetAverageExecutionDurationPerDay(GetAverageExecutionDurationPerDayInput input);
+    }
+}

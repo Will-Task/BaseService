@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Business</RootNamespace>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>3.1.1</Version>
+		<PackageId>XCZ.Business.HttpApi</PackageId>
+		<Authors>XCZ</Authors>
+		<Description>Business服务HttpApi远程依赖</Description>
+		<RepositoryUrl>https://github.com/WilliamXu96/ABP-MicroService</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/WilliamXu96/ABP-MicroService</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="8.1.1" />
+		<PackageReference Include="XCZ.FlowManagement.HttpApi" Version="3.1.1" />
+		<PackageReference Include="XCZ.FormManagement.HttpApi" Version="3.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Business.Application.Contracts\Business.Application.Contracts.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Models\" />
+	</ItemGroup>
+
+</Project>
