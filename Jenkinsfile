@@ -88,7 +88,7 @@ spec:
     stage('通過Docker構建image') {
       steps {
         container('docker-client') {
-          sh "docker build -f ${WORKSPACE}/AuthServer.Host/Dockerfile -t ${dockerUser}/${env.JOB_NAME}:latest ${WORKSPACE}/AuthServer.Host"
+          sh "docker build -f ${WORKSPACE}/BaseService.Host/Dockerfile -t ${dockerUser}/${env.JOB_NAME}:latest ${WORKSPACE}"
           echo '通過Docker構建image - SUCCESS'
         }
       }
