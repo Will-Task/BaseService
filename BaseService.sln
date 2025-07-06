@@ -17,14 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseService.HttpApi", "Base
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseService.HttpApi.Client", "BaseService.HttpApi.Client\BaseService.HttpApi.Client.csproj", "{A1607874-E2BF-4B93-B81A-54505FCB5739}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{25A38556-59BC-4516-A9F4-1ECE4FBF8438}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "business", "business", "{487D30C4-A819-4DCC-BF12-09CAC3B552F9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Application.Contracts", "..\MicroServices\Business\Business.Application.Contracts\Business.Application.Contracts.csproj", "{022BB0D6-06B0-4D63-BC46-C2E2D192FDBA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.HttpApi", "..\MicroServices\Business\Business.HttpApi\Business.HttpApi.csproj", "{DEB24E75-381E-47E2-A042-37F0221569F0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
