@@ -88,7 +88,7 @@ spec:
     stage('通過Docker構建image') {
       steps {
         container('docker-client') {
-          sh "docker build -f ${WORKSPACE}/BaseService.Host/Dockerfile -t ${dockerUser}/${env.JOB_NAME}:latest ${WORKSPACE}"
+          sh "docker build -f ${WORKSPACE}/BaseService.Host/Dockerfile -t ${dockerUser}/${env.BRANCH_NAME}:latest ${WORKSPACE}"
           echo '通過Docker構建image - SUCCESS'
         }
       }
@@ -99,7 +99,7 @@ spec:
         container('docker-client') {
           sh """
             docker login -u ${dockerUser} -p ${dockerPwd}
-            docker push ${dockerUser}/${env.JOB_NAME}:latest
+            docker push ${dockerUser}/${env.BRANCH_NAME}:latest
           """
         }
         echo '將image推送到 Docker hub - SUCCESS'
